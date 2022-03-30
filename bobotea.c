@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
-
+/*
 void color (char *s)
 {
     char colors [50][50] =
@@ -21,7 +21,7 @@ void color (char *s)
     }
     
 }
-
+*/
 int main (int argc, char **argv)
 {
     srand(time(NULL)); 
@@ -45,6 +45,6 @@ int main (int argc, char **argv)
 
     printf("bobotea generator, what are you going to drink tonight? 🍵\n");
     sleep(rand() % 5);
-    color(tea[r % (tea_len - 1)]);
-    color("!\n");
+    printf("%s", tea[r % (tea_len - 1)]);
+    printf("!\n");
 }
