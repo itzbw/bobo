@@ -44,7 +44,5 @@ int main (int argc, char **argv)
     while (tea[tea_len][0]) tea_len++;
 
     printf("bobotea generator, what are you going to drink tonight? 🍵\n");
-    sleep(rand() % 5);
-    printf("%s", tea[r % (tea_len - 1)]);
-    printf("!\n");
+    printf("%s!\n", tea[r % (tea_len - 1)]);
 }
